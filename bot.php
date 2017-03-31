@@ -1,5 +1,5 @@
 <?php
-$access_token = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+$access_token = '/dUUN+FIWIpMC8TGU6wJJ/t2UJ/Ryyoa0IsymMHrvck/iXZS26T2UoqxYXM++wWMaCpn1TNMuh6P601LNsW0qLXnxmZd/IRfZLDxYX0lS+agOAct7dVEehkfDYSwX+PIyBxZ5kvICewECirBHQVo0QdB04t89/1O/w1cDnyilFU=';
 
 // Get POST body content
 $content = file_get_contents('php://input');
@@ -19,7 +19,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => $text
+				'text' => $text+', '+$replyToken
 			];
 
 			// Make a POST Request to Messaging API to reply to sender

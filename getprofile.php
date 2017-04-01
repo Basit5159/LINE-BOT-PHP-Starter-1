@@ -1,5 +1,5 @@
 <?php
-$access_token = '/dUUN+FIWIpMC8TGU6wJJ/t2UJ/Ryyoa0IsymMHrvck/iXZS26T2UoqxYXM++wWMaCpn1TNMuh6P601LNsW0qLXnxmZd/IRfZLDxYX0lS+agOAct7dVEehkfDYSwX+PIyBxZ5kvICewECirBHQVo0QdB04t89/1O/w1cDnyilFU=';
+$access_token = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
 
 $url = 'https://api.line.me/v2/profile';
 $headers = array('Authorization: Bearer ' . $access_token);

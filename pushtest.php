@@ -32,8 +32,8 @@ curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 $result = curl_exec($ch);
 curl_close($ch);
 
-echo json_encode($post);
+//echo json_encode($post);
 
-exit;
+//exit;
 
-//echo $result . "\r\n";
+echo $result . "\r\n";

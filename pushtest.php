@@ -12,15 +12,18 @@ $messages = [
 ];
       
 $data = [
-  'to' => 'U77cc4bd9b81e52cd18c1c8c0d363f26d',
+  'to' => 'rvp1234567890',
   'messages' => [$messages],
 ];
 echo json_encode($data);
-exit;
+
 
 $post = json_encode($data);
 $headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 $ch = curl_init($url);
+
+exit;
+
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, $post);

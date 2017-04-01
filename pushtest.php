@@ -15,6 +15,9 @@ $data = [
   'to' => 'U77cc4bd9b81e52cd18c1c8c0d363f26d',
   'messages' => [$messages],
 ];
+echo json_encode($data);
+exit;
+
 $post = json_encode($data);
 $headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 $ch = curl_init($url);
@@ -26,5 +29,5 @@ curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 $result = curl_exec($ch);
 curl_close($ch);
 
-echo json_encode($data);
+
 //echo $result . "\r\n";

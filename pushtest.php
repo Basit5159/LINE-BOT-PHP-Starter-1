@@ -8,11 +8,11 @@ $url = 'https://api.line.me/v2/bot/message/push';
 
 $messages = [
   'type' => 'text',
-  'text' => 'Hello K@YNoy I am Line Bot.'
+  'text' => 'สวัสดีฮะป้าก้อยน้อย ผมชื่อก๊วยเจ๋งฮะ ผมมาจากดาวอังคาร.'
 ];
       
 $data = [
-  'to' => 'rvp1234567890',
+  'to' => 'lovecatjikkeo',
   'messages' => [$messages],
 ];
 

@@ -15,12 +15,14 @@ $data = [
   'to' => 'rvp1234567890',
   'messages' => [$messages],
 ];
-echo json_encode($data);
+
 
 
 $post = json_encode($data);
 $headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 $ch = curl_init($url);
+
+echo json_encode($post);
 
 exit;
 

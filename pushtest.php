@@ -10,9 +10,11 @@ $messages = [
   'type' => 'text',
   'text' => 'สวัสดีฮะป้าก้อยน้อย ผมชื่อก๊วยเจ๋งฮะ ผมมาจากดาวอังคาร.'
 ];
-      
+
+//lovecatjikkeo
+
 $data = [
-  'to' => 'lovecatjikkeo',
+  'to' => 'rvp1234567890',
   'messages' => [$messages],
 ];
 

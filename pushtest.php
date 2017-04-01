@@ -22,9 +22,7 @@ $post = json_encode($data);
 $headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 $ch = curl_init($url);
 
-echo json_encode($post);
 
-exit;
 
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -34,5 +32,8 @@ curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 $result = curl_exec($ch);
 curl_close($ch);
 
+echo json_encode($post);
+
+exit;
 
 //echo $result . "\r\n";

@@ -4,7 +4,7 @@ $access_token = '/dUUN+FIWIpMC8TGU6wJJ/t2UJ/Ryyoa0IsymMHrvck/iXZS26T2UoqxYXM++wW
 
 
 // Make a POST Request to Messaging API to reply to sender
-$url = 'POST https://api.line.me/v2/bot/message/push';
+$url = 'https://api.line.me/v2/bot/message/push';
 
 $messages = [
   'type' => 'text',

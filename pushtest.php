@@ -14,7 +14,7 @@ $messages = [
 //lovecatjikkeo
 
 $data = [
-  'to' => 'rvp1234567890',
+  'to' => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
   'messages' => [$messages],
 ];
 

@@ -1,5 +1,5 @@
 <?php
-$access_token = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+$access_token = 'J0DiuLWcaWVrLo6pRv53DYPrDT9z3FQ49IV9zdOOMGfmI/NnZmXY7tKR8uWHAFLTKRROdjyT4x4RP5KgTxsXH02YPtppB87nNvBW5nr/yZK3Xbt/ocZn0k5oFgNJgBePXswxn4r9hy+nfG2zHo7BXgdB04t89/1O/w1cDnyilFU=';
 
 // Get POST body content
 $content = file_get_contents('php://input');
@@ -19,9 +19,9 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => $text
+				'text' => "ยินดีต้อนรับสู่ RVP-3PACC Line Bot Notification.\nโปรดแจ้งรหัสนี้ให้คุณบาสทราบ เพื่อลงทะเบียน\n".$event['source']['userId']
 			];
-//$event['source']['userId']
+//$text, $event['source']['userId']
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
